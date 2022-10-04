@@ -129,3 +129,131 @@
         color: #0A0A0A;
     }
 }
+
+
+.foot{
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 150px;
+        @media screen and (max-width: 1070px){
+            display: block;
+        }
+    }
+
+    &__box-1{
+        display: block;
+        text-align: center;
+    }
+
+    &__name{
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        margin-bottom: 51px;
+        color: #717171;
+        @media screen and (max-width: 400px){
+            font-size: 25px;
+        }
+        @media screen and (max-width: 325px){
+            font-size: 20px;
+        }
+    }
+    &__box-name{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130%;
+        color: #0A0A0A;
+
+    }
+    &__box-2{
+        display: none;
+    }
+    &__box-3{
+        display: none;  
+    }
+}
+
+
+.midle{
+    &__box{
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width: 1070px){
+            display: block;
+        }
+    }
+    &__box-1{
+        display: block;
+        background: #574B63;
+        text-align: center;
+        padding: 0 50px;
+        padding-top: 150px;
+    }
+    &__box-2{
+        display: flex;
+        justify-content: center;
+        background-color: #574B63;
+    }
+    &__inbox{
+        display: block;
+    } 
+    &__name{
+        margin-top: 100px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        color: #FFFFFF;
+        @media screen and (max-width: 1070px){
+            margin-top: 5px;
+        }
+        @media screen and (max-width: 577px){
+            font-size: 25px;
+        }
+        @media screen and (max-width: 470px){
+            font-size: 20px;
+        }
+    }
+    &__input-1{
+        width: 400px;
+        background: #574B63;
+        height: 28px;
+        font-size: 20px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        @media screen and (max-width: 570px){
+            width: 100%;
+        }
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+    }
+    &__btn{
+        width: 240px;
+        height: 50px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 130%;
+        background: #FFFFFF;
+        border-radius: 30px;
+        border: none;
+        color: #490E84;
+        margin-bottom: 60px;
+    }
+    &__box-img{
+        @media screen and (max-width: 1070px){
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

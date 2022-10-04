@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html{
     box-sizing: border-box;
 }
@@ -13,7 +18,7 @@ li,a{
     font-family: 'Comfortaa', sans-serif;
     color: #717171;
 }
-h1{
+h1, h2{
     font-family: 'Comfortaa', sans-serif;
 }
 
