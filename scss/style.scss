@@ -10,18 +10,23 @@
             display: flex;
         }
     }
+    &__logo{
+        margin-bottom: 10px;
+    }
     &__nav{
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding-top: 30px;
-
+        @media screen and (max-width: 420px){
+            display: block;
+        }
     }
     &__menu{
         display: flex;
         gap: 30px;
         @media screen and (max-width: 420px){
-            display: none;
+            margin-bottom: 20px;
         }
     }
     &__num{
@@ -45,6 +50,7 @@
         font-size: 64px;
         line-height: 77px;
         color: #490E84;
+        margin-bottom: 20px;
         @media screen and (max-width: 540px){
             font-size: 45px;
         }
@@ -53,8 +59,8 @@
         }
     }
     &__img{
-        margin-bottom: 25px;
-        width: 72%;
+        margin-bottom: 30px;
+        width: 70%;
     }
     &__btn{
         width: 350px;
@@ -144,6 +150,15 @@
     &__box-1{
         display: block;
         text-align: center;
+        transition: all .3s;
+        cursor: pointer;
+        &:hover{
+            background-color: #71717111;
+            border-radius: 35px;
+        }
+        @media screen and (max-width: 1070px){
+            padding-top: 30px;
+        }
     }
 
     &__name{
@@ -166,13 +181,15 @@
         font-size: 20px;
         line-height: 130%;
         color: #0A0A0A;
-
     }
     &__box-2{
         display: none;
     }
     &__box-3{
         display: none;  
+    }
+    &__box-text{
+        margin-bottom: 20px;
     }
 }
 
@@ -201,7 +218,7 @@
         display: block;
     } 
     &__name{
-        margin-top: 100px;
+        margin-top: px;
         font-weight: 700;
         font-size: 32px;
         line-height: 39px;
@@ -215,6 +232,9 @@
         @media screen and (max-width: 470px){
             font-size: 20px;
         }
+        @media screen and (max-width: 375px){
+            font-size: 17px;
+        }
     }
     &__input-1{
         width: 400px;
@@ -225,6 +245,7 @@
         border-bottom: 1px solid #fff;
         margin-top: 30px;
         margin-bottom: 20px;
+        outline: none;
         @media screen and (max-width: 570px){
             width: 100%;
         }
@@ -247,13 +268,58 @@
         border: none;
         color: #490E84;
         margin-bottom: 60px;
+        @media screen and (max-width: 370px){
+            width: 100%;
+        }
     }
     &__box-img{
         @media screen and (max-width: 1070px){
-            width: 80%;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
     }
+    &__container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        @media screen and (max-width: 1070px){
+            padding: 0;
+        }
+    }
+}
+
+.footer{
+    &__top{
+        background: #0A0A0A;
+        min-height: 114px;
+        text-align: center;
+        @media screen and (max-width: 420px){
+            display: flex;
+        }
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 30px;
+
+    }
+    &__menu{
+        display: flex;
+        gap: 30px;
+        @media screen and (max-width: 420px){
+            display: none;
+        }
+    }
+    // &__logo{
+        
+    // }
+    &__num{
+        @media screen and (max-width: 600px){
+            display: none;
+        }
+    }
+
 }
